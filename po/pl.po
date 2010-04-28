@@ -124,6 +124,10 @@ msgstr "Nieodczytana wiadomość"
 msgid "Unread messages"
 msgstr "Nieodczytane wiadomości"
 
+#: ../penge/penge-welcome-tile.c:26
+msgid "When you’ve set up your web accounts and used some files they will appear here on the Myzone for easy access whenever you want. "
+msgstr "Po skonfigurowaniu kont internetowych i użyciu niektórych plików, zostaną one wyświetlone w Myzone, aby umożliwić łatwy do nich dostęp w dowolnej chwili. "
+
 # Depend on context... could also be:
 # <b>Spotkania</b>
 # <b>Grafik</b>
@@ -131,11 +135,7 @@ msgstr "Nieodczytane wiadomości"
 # <b>Plany</b>
 #: ../penge/penge-calendar-pane.c:483
 msgid "Appointments"
-msgstr "Zaplanowane"
-
-#: ../penge/penge-welcome-tile.c:26
-msgid "When you’ve set up your web accounts and used some files they will appear here on the Myzone for easy access whenever you want. "
-msgstr "Po skonfigurowaniu kont internetowych i użyciu niektórych plików, zostaną one wyświetlone w Myzone, aby umożliwić łatwy do nich dostęp w dowolnej chwili. "
+msgstr "Spotkania"
 
 #~ msgid "Things that your friends do online will appear here. Activate your accounts now!"
 #~ msgstr "Tutaj pojawią się informacje o aktywności twoich znajomych w sieci. Aktywuj swoje konta!"
