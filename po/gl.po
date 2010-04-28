@@ -20,10 +20,6 @@ msgstr ""
 msgid "Appointments"
 msgstr "Citas"
 
-#: ../penge/penge-calendar-pane.c:527
-msgid "Tasks"
-msgstr ""
-
 #: ../penge/penge-events-pane.c:71
 msgid "Create an appointment"
 msgstr "Crear unha cita"
@@ -53,35 +49,6 @@ msgstr "Hoxe non hai nada que facer"
 msgid "Due %x"
 msgstr "Vence %x"
 
-#: ../penge/penge-welcome-tile.c:33
-msgid "Play intro video"
-msgstr ""
-
-#: ../penge/penge-welcome-tile.c:65
-#, fuzzy
-msgid "Welcome to MeeGo"
-msgstr "Benvida/o a Moblin"
-
-#: ../penge/penge-welcome-tile.c:84
-msgid "This is the Myzone, where your recently used files and content from your web feeds will appear."
-msgstr ""
-
-#: ../penge/penge-welcome-tile.c:27
-msgid "When you’ve set up your web accounts and used some files they will appear here on the Myzone for easy access whenever you want. "
-msgstr ""
-
-#: ../penge/penge-email-pane.c:192
-msgid "No unread messages"
-msgstr ""
-
-#: ../penge/penge-email-pane.c:194
-msgid "Unread message"
-msgstr ""
-
-#: ../penge/penge-email-pane.c:196
-msgid "Unread messages"
-msgstr ""
-
 #: ../data/moblin-panel-myzone.desktop.in.in.h:1
 msgid "Myzone panel"
 msgstr "Panel AMiñaZona"
@@ -105,11 +72,6 @@ msgstr "<b>Mudar o que aparece no seu AMiñaZona</b>"
 #: ../data/capplet.ui.h:4
 msgid "Change My Web Accounts"
 msgstr "Mudar as miñas contas web"
-
-#: ../data/capplet.ui.h:3
-#, fuzzy
-msgid "Calendar and tasks:"
-msgstr "Calendario e tarefas:"
 
 #: ../data/capplet.ui.h:6
 msgid "Clear recent documents"
@@ -163,6 +125,42 @@ msgstr "Mostrar metade e metade"
 #: ../penge/penge-calendar-pane.c:496 ../penge/penge-calendar-pane.c:539
 msgid "Open"
 msgstr "Abrir"
+
+#: ../penge/penge-calendar-pane.c:527
+msgid "Tasks"
+msgstr "Tarefas"
+
+#: ../penge/penge-welcome-tile.c:65
+msgid "Welcome to MeeGo"
+msgstr "Benvida/o a MeeGo"
+
+#: ../penge/penge-welcome-tile.c:33
+msgid "Play intro video"
+msgstr "Reproducir o vídeo introdutorio"
+
+#: ../penge/penge-welcome-tile.c:27
+msgid "When you’ve set up your web accounts and used some files they will appear here on the Myzone for easy access whenever you want. "
+msgstr "Cando teña configurado as contas web e utilizado algúns ficheiros, aparecerán aquí, en AMiñaZona, para acceder doadamente cando quixer."
+
+#: ../penge/penge-welcome-tile.c:84
+msgid "This is the Myzone, where your recently used files and content from your web feeds will appear."
+msgstr "Esta é AMiñaZona, onde aparecen os ficheiros usados recentemente e o contido das fontes da web."
+
+#: ../penge/penge-email-pane.c:194
+msgid "Unread message"
+msgstr "Mensaxe sen ler"
+
+#: ../penge/penge-email-pane.c:192
+msgid "No unread messages"
+msgstr "Non hai mensaxes sen ler"
+
+#: ../penge/penge-email-pane.c:196
+msgid "Unread messages"
+msgstr "Mensaxes sen ler"
+
+#: ../data/capplet.ui.h:3
+msgid "Calendar and tasks:"
+msgstr "Calendario e tarefas:"
 
 #~ msgid "Things that your friends do online will appear here. Activate your accounts now!"
 #~ msgstr "Aquí aparece o que andan a facer as súas amizades na Internet. Active agora as súas contas!"
