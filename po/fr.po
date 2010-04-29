@@ -26,10 +26,6 @@ msgstr "Changer le contenu et l'arrière-plan de Myzone"
 msgid "Myzone"
 msgstr "Myzone"
 
-#: ../data/capplet.ui.h:1
-msgid "<b>Change what is shown in your Myzone</b>"
-msgstr ""
-
 #: ../capplet/gconf-bridge.c:1232
 #, c-format
 msgid "GConf error: %s"
@@ -161,6 +157,10 @@ msgstr "Réinitialiser aux valeurs par défaut"
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
 msgstr "Alertes email :"
+
+#: ../data/capplet.ui.h:1
+msgid "<b>Change what is shown in your Myzone</b>"
+msgstr "<b>Changer ce qui apparaît dans votre Myzone</b>"
 
 #~ msgid "Things that your friends do online will appear here. Activate your accounts now!"
 #~ msgstr "Ce que vos amis font en ligne va apparaître ici. Activez vos comptes dès maintenant !"
