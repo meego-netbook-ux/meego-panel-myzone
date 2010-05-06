@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-28 09:21+0000\n"
+"POT-Creation-Date: 2010-05-05 09:20+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: GLSKOR_SunKim <sunx.kim@intel.com>\n"
 "Language-Team: \n"
@@ -29,11 +29,11 @@ msgstr "Myzone"
 
 #: ../data/capplet.ui.h:1
 msgid "<b>Change what is shown in your Myzone</b>"
-msgstr ""
+msgstr "<b>Myzone에 표시된 것 바꾸기</b>"
 
 #: ../data/capplet.ui.h:2
 msgid "<b>Myzone Wallpaper</b>"
-msgstr ""
+msgstr "<b>Myzone 바탕화면</b>"
 
 #: ../data/capplet.ui.h:3
 msgid "Calendar and tasks:"
@@ -41,23 +41,23 @@ msgstr "캘린더 및 작업"
 
 #: ../data/capplet.ui.h:4
 msgid "Change My Web Accounts"
-msgstr ""
+msgstr "웹 계정 변경"
 
 #: ../data/capplet.ui.h:5
 msgid "Choose your wallpaper"
-msgstr ""
+msgstr "바탕화면 선택"
 
 #: ../data/capplet.ui.h:6
 msgid "Clear recent documents"
-msgstr ""
+msgstr "최신 문서 지우기"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr ""
+msgstr "이메일 경고:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"
-msgstr ""
+msgstr "기본값 재설정"
 
 #: ../capplet/gconf-bridge.c:1232
 #, c-format
