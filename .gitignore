@@ -33,5 +33,5 @@ po/Makefile.in.in
 stamp-h1
 xmldocs.make
 
-src/moblin-panel-myzone
-src/org.moblin.UX.Shell.Panels.myzone.service
+src/meego-panel-myzone
+src/com.meego.UX.Shell.Panels.myzone.service

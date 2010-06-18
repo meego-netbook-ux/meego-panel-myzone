@@ -2,10 +2,10 @@ prefix=@prefix@
 exec_prefix=@exec_prefix@
 libdir=@libdir@
 includedir=@includedir@
-pkgincludedir=${includedir}/moblin-panel-myzone
+pkgincludedir=${includedir}/meego-panel-myzone
 
 Name: Penge tiles
-Description: Penge tiles from Moblin panel myzone
+Description: Penge tiles from Meego panel myzone
 Version: @PENGE_VERSION@
 Requires: libsocialweb-client clutter-1.0 mx-1.0 libjana-ecal telepathy-glib
 Libs: -L${libdir} -lpenge -ltelepathy-glib
