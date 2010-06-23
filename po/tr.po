@@ -63,7 +63,7 @@ msgstr "Moblin e Hoşgeldiniz"
 
 #: ../penge/penge-welcome-tile.c:86
 #, fuzzy
-msgid "This is the Myzone, where your recently used files and content from your web feeds will appear."
+msgid "This is myzone, where your recently used files and content from your web feeds will appear."
 msgstr "Burası Myzone; en son kullandığınız dosyaları ve web sayfalarının içerikleri burada görüntülenecek."
 
 #~ msgid "As Moblin is a bit different to other computers, we've put together a couple of bits and pieces to help you find your way around. We hope you enjoy it, The Moblin Team."

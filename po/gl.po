@@ -58,7 +58,7 @@ msgid "Myzone"
 msgstr "AMiñaZona"
 
 #: ../data/myzone.desktop.in.in.h:1
-msgid "Change the Myzone background and content"
+msgid "Change myzone background and content"
 msgstr "Mudar o fondo e o contido de AMiñaZona"
 
 #: ../data/capplet.ui.h:2
@@ -82,7 +82,7 @@ msgid "Choose your wallpaper"
 msgstr "Escolla o fondo"
 
 #: ../capplet/myzone-cc-panel.c:77
-msgid "Do you want to clear your recent documents? This will remove the local content from the Myzone"
+msgid "Do you want to clear your recent documents? This will remove the local content from myzone"
 msgstr "Desexa limpar os documentos recentes? Isto elimina o contido local de AMiñaZona"
 
 #: ../capplet/myzone-cc-panel.c:55
@@ -139,11 +139,11 @@ msgid "Play intro video"
 msgstr "Reproducir o vídeo introdutorio"
 
 #: ../penge/penge-welcome-tile.c:27
-msgid "When you’ve set up your web accounts and used some files they will appear here on the Myzone for easy access whenever you want. "
+msgid "When you’ve set up your web accounts and used some files they will appear here on myzone for easy access whenever you want. "
 msgstr "Cando teña configurado as contas web e utilizado algúns ficheiros, aparecerán aquí, en AMiñaZona, para acceder doadamente cando quixer."
 
 #: ../penge/penge-welcome-tile.c:84
-msgid "This is the Myzone, where your recently used files and content from your web feeds will appear."
+msgid "This is myzone, where your recently used files and content from your web feeds will appear."
 msgstr "Esta é AMiñaZona, onde aparecen os ficheiros usados recentemente e o contido das fontes da web."
 
 #: ../penge/penge-email-pane.c:194

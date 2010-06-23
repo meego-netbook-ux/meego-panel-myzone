@@ -25,7 +25,7 @@ msgid "Myzone panel"
 msgstr "Myzone paneel"
 
 #: ../data/myzone.desktop.in.in.h:1
-msgid "Change the Myzone background and content"
+msgid "Change myzone background and content"
 msgstr "Verander de Myzone achtergrond en inhoud"
 
 #: ../data/myzone.desktop.in.in.h:2
@@ -95,7 +95,7 @@ msgid "Show as many recent files as possible"
 msgstr "Zo veel mogelijk recente bestanden weergeven"
 
 #: ../capplet/myzone-cc-panel.c:77
-msgid "Do you want to clear your recent documents? This will remove the local content from the Myzone"
+msgid "Do you want to clear your recent documents? This will remove the local content from myzone"
 msgstr "Wil je de lijst van recente documenten wissen? Dit verwijdert de lokale inhoud van de Myzone"
 
 #: ../penge/penge-calendar-pane.c:484
@@ -150,11 +150,11 @@ msgid "Welcome to MeeGo"
 msgstr "Welkom by MeeGo"
 
 #: ../penge/penge-welcome-tile.c:84
-msgid "This is the Myzone, where your recently used files and content from your web feeds will appear."
+msgid "This is myzone, where your recently used files and content from your web feeds will appear."
 msgstr "Dit is de Myzone, waar je recente bestanden en inhoud van webfeeds verschijnen."
 
 #: ../penge/penge-welcome-tile.c:27
-msgid "When you’ve set up your web accounts and used some files they will appear here on the Myzone for easy access whenever you want. "
+msgid "When you’ve set up your web accounts and used some files they will appear here on myzone for easy access whenever you want. "
 msgstr "Voor toegangsgemak zullen, als je jouw web accounts hebt ingesteld en een aantal bestanden hebt gebruikt, die hier in Myzone verschijnen."
 
 #: ../penge/penge-email-pane.c:192

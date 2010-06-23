@@ -21,7 +21,7 @@ msgid "Myzone panel"
 msgstr "Sicriftôr Myzone"
 
 #: ../data/myzone.desktop.in.in.h:1
-msgid "Change the Myzone background and content"
+msgid "Change myzone background and content"
 msgstr "Candjî l' fond d' Myzone et çou k' i gn a ddins"
 
 #: ../data/myzone.desktop.in.in.h:2 ../capplet/myzone-cc-panel.c:169
@@ -58,7 +58,7 @@ msgid "Show as many recent files as possible"
 msgstr "Mostrer ostant d' fitchîs d' enawaire k' on sait"
 
 #: ../capplet/myzone-cc-panel.c:77
-msgid "Do you want to clear your recent documents? This will remove the local content from the Myzone"
+msgid "Do you want to clear your recent documents? This will remove the local content from myzone"
 msgstr "Voloz vs rinetyî vos documints d' enawaire? Ça va oister l' ådvins coinrece del Myzone"
 
 #: ../penge/penge-calendar-pane.c:484
@@ -111,11 +111,11 @@ msgid "Welcome to MeeGo"
 msgstr "Bénvnowe dins MeeGo"
 
 #: ../penge/penge-welcome-tile.c:84
-msgid "This is the Myzone, where your recently used files and content from your web feeds will appear."
+msgid "This is myzone, where your recently used files and content from your web feeds will appear."
 msgstr "Çouchal est Myzone, wice ki vos fitchîs eployîs enawaire eyet l' ådvins d' vos floûs waibe aparexhront."
 
 #: ../penge/penge-welcome-tile.c:27
-msgid "When you’ve set up your web accounts and used some files they will appear here on the Myzone for easy access whenever you want. "
+msgid "When you’ve set up your web accounts and used some files they will appear here on myzone for easy access whenever you want. "
 msgstr "Cwand vs avoz defini vos contes waibes eyet eployî kékès fitchîs, il aparexhront chal sol Myzone pos î moussî  abeydimint cwand vos l' voloz."
 
 #: ../penge/penge-email-pane.c:192

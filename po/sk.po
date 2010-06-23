@@ -20,7 +20,7 @@ msgid "Myzone panel"
 msgstr "Panel Myzone"
 
 #: ../data/myzone.desktop.in.in.h:1
-msgid "Change the Myzone background and content"
+msgid "Change myzone background and content"
 msgstr "Zmeniť obsah a pozadie plochy Myzone"
 
 #: ../data/myzone.desktop.in.in.h:2 ../capplet/myzone-cc-panel.c:169
@@ -59,7 +59,7 @@ msgstr "Zobraziť čo najviac nedávno otvorených súborov"
 #: ../capplet/myzone-cc-panel.c:77
 msgid ""
 "Do you want to clear your recent documents? This will remove the local "
-"content from the Myzone"
+"content from myzone"
 msgstr ""
 "Chcete vyčistiť zoznam naposledy otvorených dokumentov? Toto odstráni "
 "miestny obsah z Myzone"
@@ -115,7 +115,7 @@ msgstr "Vitajte v MeeGo"
 
 #: ../penge/penge-welcome-tile.c:83
 msgid ""
-"This is the Myzone, where your recently used files and content from your web "
+"This is myzone, where your recently used files and content from your web "
 "feeds will appear."
 msgstr ""
 "Toto je Myzone. Tu sa objavia naposledy otvorené dokumenty a obsah z vašich "
@@ -124,7 +124,7 @@ msgstr ""
 #: ../penge/penge-welcome-tile.c:26
 msgid ""
 "When you’ve set up your web accounts and used some files they will appear "
-"here on the Myzone for easy access whenever you want. "
+"here on myzone for easy access whenever you want. "
 msgstr ""
 "Keď si nastavíte vaše webové účty a použijete nejaké súbory - objavia sa tu "
 "na Myzone a budete mať k nim prístup kedykoľvek budete chcieť."
