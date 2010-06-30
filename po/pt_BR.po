@@ -1,12 +1,12 @@
 # GLSPTB_Gabor <gaborx.k.becht@intel.com>, 2009.
 # Og Maciel <ogmaciel@gnome.org>, 2009.
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-04-28 09:21+0000\n"
-"PO-Revision-Date: 2010-04-28 14:24-0800\n"
+"POT-Creation-Date: 2010-06-30 09:18+0000\n"
+"PO-Revision-Date: 2010-06-30 15:38-0800\n"
 "Last-Translator: GLSPTB_Gabor <bechtg@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <l10n@moblin.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,10 +19,11 @@ msgid "Myzone panel"
 msgstr "Painel Myzone"
 
 #: ../data/myzone.desktop.in.in.h:1
-msgid "Change myzone background and content"
-msgstr "Modifique o fundo e conteúdo do Myzone"
+msgid "Change the Myzone background and content"
+msgstr "Modifique o fundo e conteúdo do Myzone   "
 
-#: ../data/myzone.desktop.in.in.h:2 ../capplet/myzone-cc-panel.c:169
+#: ../data/myzone.desktop.in.in.h:2
+#: ../capplet/myzone-cc-panel.c:169
 msgid "Myzone"
 msgstr "Myzone"
 
@@ -88,12 +89,17 @@ msgid "Show as many recent files as possible"
 msgstr "Mostrar o maior número de arquivos recentes"
 
 #: ../capplet/myzone-cc-panel.c:77
-msgid "Do you want to clear your recent documents? This will remove the local content from myzone"
-msgstr "Você quer limpar seus documentos recentes? Isto removerá o conteúdo local do MyZone"
+msgid "Do you want to clear your recent documents? This will remove the local content from your myzone"
+msgstr "Você quer limpar seus documentos recentes? Isto removerá o conteúdo local do seu myzone"
 
 #: ../penge/penge-calendar-pane.c:484
 msgid "Appointments"
 msgstr "Compromissos"
+
+#: ../penge/penge-calendar-pane.c:496
+#: ../penge/penge-calendar-pane.c:539
+msgid "Open"
+msgstr "Abrir"
 
 #: ../penge/penge-calendar-pane.c:527
 msgid "Tasks"
@@ -103,7 +109,8 @@ msgstr "Tarefas"
 msgid "Create an appointment"
 msgstr "Criar um compromisso"
 
-#: ../penge/penge-events-pane.c:72 ../penge/penge-tasks-pane.c:53
+#: ../penge/penge-events-pane.c:72
+#: ../penge/penge-tasks-pane.c:53
 msgid "Add"
 msgstr "Adicionar"
 
@@ -128,21 +135,17 @@ msgstr "Nada para fazer hoje"
 msgid "Due %x"
 msgstr "Prazo %x"
 
-#: ../penge/penge-welcome-tile.c:33
+#: ../penge/penge-welcome-tile.c:28
+msgid "When you’ve set up your web accounts and used some files they will appear here on myzone for easy access whenever you want. "
+msgstr "Se você configurou suas contas da web e usou alguns do arquivos, eles irão aparecer aqui no Myzone para acesso fácil quando você quiser."
+
+#: ../penge/penge-welcome-tile.c:34
 msgid "Play intro video"
 msgstr "Reproduzir vídeo de introdução"
 
-#: ../penge/penge-welcome-tile.c:65
+#: ../penge/penge-welcome-tile.c:87
 msgid "Welcome to MeeGo"
 msgstr "Bem-vindo a MeeGo"
-
-#: ../penge/penge-welcome-tile.c:84
-msgid "This is myzone, where your recently used files and content from your web feeds will appear."
-msgstr "Este é Myzone, onde seus arquivos recentemente usados e conteúdo de sua web feed vai aparecer."
-
-#: ../penge/penge-welcome-tile.c:27
-msgid "When you’ve set up your web accounts and used some files they will appear here on myzone for easy access whenever you want. "
-msgstr "Se você configurou suas contas da web e usou alguns do arquivos, eles irão aparecer aqui no Myzone para acesso fácil quando você quiser."
 
 #: ../penge/penge-email-pane.c:192
 msgid "No unread messages"
@@ -156,18 +159,28 @@ msgstr "Mensagem não lida"
 msgid "Unread messages"
 msgstr "Mensagens não lidas"
 
-#: ../penge/penge-calendar-pane.c:496 ../penge/penge-calendar-pane.c:539
-msgid "Open"
-msgstr "Abrir"
-
-#~ msgid "Things that your friends do online will appear here. Activate your accounts now!"
-#~ msgstr "As coisas que o seus amigos fazem online aparecerão aqui. Ative suas contas agora!"
-
+#~ msgid ""
+#~ "This is myzone, where your recently used files and content from your web "
+#~ "feeds will appear."
+#~ msgstr ""
+#~ "Este é Myzone, onde seus arquivos recentemente usados e conteúdo de sua "
+#~ "web feed vai aparecer."
+#~ msgid ""
+#~ "Things that your friends do online will appear here. Activate your "
+#~ "accounts now!"
+#~ msgstr ""
+#~ "As coisas que o seus amigos fazem online aparecerão aqui. Ative suas "
+#~ "contas agora!"
 #~ msgid "Myzone settings"
 #~ msgstr "Configurações Myzone"
-
-#~ msgid "As Moblin is a bit different to other computers, we've put together a couple of bits and pieces to help you find your way around. We hope you enjoy it, The Moblin Team."
-#~ msgstr "Como o Moblin é um pouco diferente de outros computadores, nós juntamos algumas dicas e itens para ajudá-lo a navegar pelo sistema. Esperamos que se divirta, a Equipe Moblin."
-
+#~ msgid ""
+#~ "As Moblin is a bit different to other computers, we've put together a "
+#~ "couple of bits and pieces to help you find your way around. We hope you "
+#~ "enjoy it, The Moblin Team."
+#~ msgstr ""
+#~ "Como o Moblin é um pouco diferente de outros computadores, nós juntamos "
+#~ "algumas dicas e itens para ajudá-lo a navegar pelo sistema. Esperamos que "
+#~ "se divirta, a Equipe Moblin."
 #~ msgid "<b>Welcome to Moblin 2.1 for Netbooks</b>"
 #~ msgstr "<b>Bem-vindo ao Moblin 2.1 para Netbooks</b>"
+
