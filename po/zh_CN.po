@@ -4,14 +4,14 @@
 # This file is distributed under the same license as the mutter-moblin package.
 # Li Jian <jian.li@turbolinux.com.cn>, 2009.
 # Zhu Yanhai <yanhai.zhu@linux.intel.com>, 2009
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.27.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-06-30 09:18+0000\n"
-"PO-Revision-Date: 2010-04-29 17:54-0800\n"
-"Last-Translator: mackey tian <mackeyx.tian@ptiglobal.net>\n"
+"PO-Revision-Date: 2010-07-01 14:35-0800\n"
+"Last-Translator: Yun Nie\n"
 "Language-Team: Chinese (simplified)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,11 +24,11 @@ msgid "Myzone panel"
 msgstr "Myzone 面板"
 
 #: ../data/myzone.desktop.in.in.h:1
-#, fuzzy
 msgid "Change the Myzone background and content"
 msgstr "更改 Myzone 背景和内容"
 
-#: ../data/myzone.desktop.in.in.h:2 ../capplet/myzone-cc-panel.c:169
+#: ../data/myzone.desktop.in.in.h:2
+#: ../capplet/myzone-cc-panel.c:169
 msgid "Myzone"
 msgstr "Myzone"
 
@@ -97,7 +97,8 @@ msgstr "显示尽可能多的最近的文件"
 msgid "Appointments"
 msgstr "我的日程安排"
 
-#: ../penge/penge-calendar-pane.c:496 ../penge/penge-calendar-pane.c:539
+#: ../penge/penge-calendar-pane.c:496
+#: ../penge/penge-calendar-pane.c:539
 msgid "Open"
 msgstr "打开"
 
@@ -109,7 +110,8 @@ msgstr "任务"
 msgid "Create an appointment"
 msgstr "创建一个日程"
 
-#: ../penge/penge-events-pane.c:72 ../penge/penge-tasks-pane.c:53
+#: ../penge/penge-events-pane.c:72
+#: ../penge/penge-tasks-pane.c:53
 msgid "Add"
 msgstr "添加"
 
@@ -159,7 +161,6 @@ msgid "Unread messages"
 msgstr "已读的消息"
 
 #: ../capplet/myzone-cc-panel.c:77
-#, fuzzy
 msgid "Do you want to clear your recent documents? This will remove the local content from your myzone"
 msgstr "您要清除最近的文件吗？这将从您的 Myzone 移除本地内容。"
 
