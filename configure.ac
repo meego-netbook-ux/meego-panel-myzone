@@ -1,5 +1,5 @@
 AC_PREREQ(2.53)
-AC_INIT(meego-panel-myzone, 0.2.3)
+AC_INIT(meego-panel-myzone, 0.2.4)
 AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
 AC_CONFIG_MACRO_DIR([m4])
 AM_CONFIG_HEADER(config.h)
