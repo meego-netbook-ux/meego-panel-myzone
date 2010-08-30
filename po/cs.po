@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -16,8 +16,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Poedit-Language: Czech\n"
-"X-Poedit-Country: CZECH REPUBLIC\n"
 "X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Country: CZECH REPUBLIC\n"
 
 #: ../penge/penge-calendar-pane.c:476
 msgid "<b>Appointments</b>"
@@ -27,18 +27,17 @@ msgstr "<b>Schůzky</b>"
 msgid "Create an appointment"
 msgstr "Vytvořit schůzku"
 
-#: ../penge/penge-events-pane.c:60
-#: ../penge/penge-tasks-pane.c:52
+#: ../penge/penge-events-pane.c:60 ../penge/penge-tasks-pane.c:52
 msgid "Add"
 msgstr "Přidat"
 
 #: ../penge/penge-events-pane.c:268
 msgid "No calendar entries this week"
-msgstr ""
+msgstr "Pro tento týden nejsou v kalendáři žádné záznamy"
 
 #: ../penge/penge-people-placeholder-tile.c:116
 msgid "Things that your friends do online will appear here. Activate your accounts now!"
-msgstr ""
+msgstr "Věci, které dělají vaši přátelé, když jsou připojeni k internetu, se budou objevovat zde. Spusťte své účty nyní!"
 
 #: ../penge/penge-recent-file-tile.c:224
 msgid "Web page"
@@ -50,12 +49,12 @@ msgstr "Vytvořit nový úkol"
 
 #: ../penge/penge-tasks-pane.c:433
 msgid "Nothing to do today"
-msgstr ""
+msgstr "Dnes není co dělat"
 
 #: ../penge/penge-task-tile.c:325
 #, c-format
 msgid "Due %x"
-msgstr ""
+msgstr "Má nastat %x"
 
 #: ../penge/penge-welcome-tile.c:88
 #, fuzzy
@@ -64,5 +63,4 @@ msgstr "<b>Vítá vás Moblin 2.1 pro netbooky</b>"
 
 #: ../penge/penge-welcome-tile.c:108
 msgid "As Moblin is a bit different to other computers, we've put together a couple of bits and pieces to help you find your way around. We hope you enjoy it, The Moblin Team."
-msgstr ""
-
+msgstr "Jelikož je Moblin trochu jiný, dali jsme dohromady pár věcí, abychom vám pomohli najít cestu k němu. Věříme, že z něj budete mít radost. Lidé okolo Moblinu."
