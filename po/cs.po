@@ -57,7 +57,6 @@ msgid "Due %x"
 msgstr "Má nastat %x"
 
 #: ../penge/penge-welcome-tile.c:88
-#, fuzzy
 msgid "<b>Welcome to Moblin 2.1 for Netbooks</b>"
 msgstr "<b>Vítá vás Moblin 2.1 pro netbooky</b>"
 
