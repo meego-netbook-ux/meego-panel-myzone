@@ -47,7 +47,9 @@ PKG_CHECK_MODULES(PENGE,
 PKG_CHECK_MODULES(MAILME,
                   gobject-2.0
                   glib-2.0
-                  telepathy-glib >= 0.10)
+                  telepathy-glib >= 0.10
+                  dbus-glib-1
+                  gio-2.0)
 
 AC_ARG_ENABLE([cache],
               [AC_HELP_STRING([--enable-cache],
