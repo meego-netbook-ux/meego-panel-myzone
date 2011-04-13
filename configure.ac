@@ -47,7 +47,7 @@ PKG_CHECK_MODULES(PENGE,
 PKG_CHECK_MODULES(MAILME,
                   gobject-2.0
                   glib-2.0
-                  telepathy-glib >= 0.10
+                  telepathy-glib >= 0.14
                   dbus-glib-1
                   gio-2.0)
 
