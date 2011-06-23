@@ -25,15 +25,29 @@ AC_ISC_POSIX
 AC_HEADER_STDC
 AM_PROG_CC_C_O
 AC_PROG_LN_S
+PKG_PROG_PKG_CONFIG
 
 AC_SUBST(PENGE_VERSION, [0.1])
 
 CFLAGS="$CFLAGS -Wall"
 
-PKG_CHECK_MODULES(MPL, meego-panel >= 0.50.0)
+AC_MSG_CHECKING([whether to use the MeeGo environment])
+AC_ARG_WITH([meego],[AS_HELP_STRING([--without-meego], [disable support for MeeGo environment])],
+            [], [with_meego=yes])
+AS_IF(
+[test "$with_meego" = yes],
+[
+        AC_MSG_RESULT([yes])
+        AC_DEFINE([WITH_MEEGO], 1, [Use MeeGo])
 
-MEEGO_PANELS_DIR=`$PKG_CONFIG --variable=meego_panel_panels_dir meego-panel`
-AC_SUBST(MEEGO_PANELS_DIR)
+        PKG_CHECK_MODULES(MPL, meego-panel >= 0.50.0)
+
+        MEEGO_PANELS_DIR=$($PKG_CONFIG meego-panel --variable=meego_panel_panels_dir)
+        AC_SUBST(MEEGO_PANEL_DIR)
+],
+AC_MSG_RESULT([no])
+)
+AM_CONDITIONAL([WITH_MEEGO], [test "$with_meego" = "yes"])
 
 PKG_CHECK_MODULES(PENGE,
                   libjana-ecal
