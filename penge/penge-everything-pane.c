@@ -23,7 +23,6 @@
 #include <libsocialweb-client/sw-client.h>
 #include <gtk/gtk.h>
 #include <gio/gio.h>
-#include <meego-panel/mpl-utils.h>
 #include <gconf/gconf-client.h>
 
 #include "penge-everything-pane.h"
@@ -67,6 +66,67 @@ struct _PengeEverythingPanePrivate {
 
   guint refresh_id;
 };
+
+#if WITH_MEEGO
+#include <meego-panel/mpl-utils.h>
+#else
+gchar *
+mpl_utils_get_thumbnail_path (const gchar *uri)
+{
+  gchar *thumbnail_path;
+  gchar *thumbnail_filename = NULL;
+  gchar *csum;
+
+  csum = g_compute_checksum_for_string (G_CHECKSUM_MD5, uri, -1);
+
+  thumbnail_path = g_build_filename (g_get_home_dir (),
+                                     ".bkl-thumbnails",
+                                     csum,
+                                     NULL);
+
+  if (g_file_test (thumbnail_path, G_FILE_TEST_EXISTS))
+  {
+    g_free (csum);
+    goto success;
+  }
+
+  g_free (thumbnail_path);
+
+  thumbnail_filename = g_strconcat (csum, ".png", NULL);
+  thumbnail_path = g_build_filename (g_get_home_dir (),
+                                     ".thumbnails",
+                                     "large",
+                                     thumbnail_filename,
+                                     NULL);
+
+  g_free (csum);
+
+  if (g_file_test (thumbnail_path, G_FILE_TEST_EXISTS))
+  {
+    goto success;
+  } else {
+    g_free (thumbnail_path);
+    thumbnail_path = g_build_filename (g_get_home_dir (),
+                                       ".thumbnails",
+                                       "normal",
+                                       thumbnail_filename,
+                                       NULL);
+
+    if (g_file_test (thumbnail_path, G_FILE_TEST_EXISTS))
+    {
+      goto success;
+    }
+  }
+
+  g_free (thumbnail_filename);
+  g_free (thumbnail_path);
+  return NULL;
+
+success:
+  g_free (thumbnail_filename);
+  return thumbnail_path;
+}
+#endif
 
 static void
 penge_everything_pane_get_property (GObject *object, guint property_id,

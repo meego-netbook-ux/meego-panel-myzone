@@ -17,15 +17,19 @@
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
+#include <config.h>
 
 #include <glib.h>
 #include <clutter/clutter.h>
+
+#if WITH_MEEGO
 #include <meego-panel/mpl-panel-client.h>
+MplPanelClient *penge_utils_get_panel_client (ClutterActor *actor);
+#endif
 
 void penge_utils_load_stylesheet (void);
 void penge_utils_signal_activated (ClutterActor *actor);
 
-MplPanelClient *penge_utils_get_panel_client (ClutterActor *actor);
 gboolean penge_utils_launch_for_uri (ClutterActor *actor,
                                      const gchar  *uri);
 gboolean penge_utils_launch_for_desktop_file (ClutterActor *actor,

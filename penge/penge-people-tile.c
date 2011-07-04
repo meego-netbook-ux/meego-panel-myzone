@@ -17,7 +17,6 @@
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <meego-panel/mpl-utils.h>
 #include <libsocialweb-client/sw-client.h>
 
 #include "penge-people-tile.h"
@@ -221,7 +220,6 @@ penge_people_tile_set_item (PengePeopleTile *tile,
   ClutterActor *body, *tmp_text;
   ClutterActor *label;
   const gchar *content, *thumbnail;
-  gchar *date;
   GError *error = NULL;
   ClutterActor *avatar = NULL;
   ClutterActor *avatar_bin;

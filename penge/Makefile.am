@@ -37,8 +37,6 @@ libpenge_la_SOURCES = \
 		      penge-utils.c \
 		      penge-magic-texture.c \
 		      penge-view-background.c \
-		      penge-apps-pane.c \
-		      penge-app-tile.c \
 		      penge-task-tile.c \
 		      penge-tasks-pane.c \
 		      penge-welcome-tile.c \
@@ -49,6 +47,12 @@ libpenge_la_SOURCES = \
 		      penge-email-pane.c \
 		      penge-count-tile.c \
 		      penge-dynamic-box.c
+
+if WITH_MEEGO
+libpenge_la_SOURCES += \
+		      penge-apps-pane.c \
+		      penge-app-tile.c
+endif
 
 libpenge_la_LIBADD = $(top_builddir)/mailme/libmailme.la
 

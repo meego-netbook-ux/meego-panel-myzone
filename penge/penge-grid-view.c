@@ -17,16 +17,22 @@
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#include <meego-panel/mpl-panel-client.h>
+#include <config.h>
+
 #include <gconf/gconf-client.h>
+
+#if WITH_MEEGO
+#include <meego-panel/mpl-panel-client.h>
+#endif
 
 #include "penge-grid-view.h"
 
 #include "penge-calendar-pane.h"
 #include "penge-everything-pane.h"
+#if WITH_MEEGO
 #include "penge-apps-pane.h"
+#endif
 #include "penge-email-pane.h"
-
 #include "penge-view-background.h"
 
 G_DEFINE_TYPE (PengeGridView, penge_grid_view, MX_TYPE_TABLE)
@@ -45,13 +51,17 @@ G_DEFINE_TYPE (PengeGridView, penge_grid_view, MX_TYPE_TABLE)
 struct _PengeGridViewPrivate {
   ClutterActor *calendar_pane;
   ClutterActor *email_pane;
+#if WITH_MEEGO
   ClutterActor *favourite_apps_pane;
+#endif
   ClutterActor *everything_pane;
   ClutterActor *background;
   ClutterActor *background_fade;
   ClutterActor *header_label;
 
+#if WITH_MEEGO
   MplPanelClient *panel_client;
+#endif
   GConfClient *gconf_client;
   guint show_calendar_notify_id;
   guint show_email_notify_id;
@@ -71,6 +81,7 @@ enum
 
 static guint signals[LAST_SIGNAL] = { 0 };
 
+#if WITH_MEEGO
 enum
 {
   PROP_0,
@@ -106,17 +117,20 @@ penge_grid_view_set_property (GObject *object, guint property_id,
     G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
   }
 }
+#endif
 
 static void
 penge_grid_view_dispose (GObject *object)
 {
   PengeGridViewPrivate *priv = GET_PRIVATE (object);
 
+#if WITH_MEEGO
   if (priv->panel_client)
   {
     g_object_unref (priv->panel_client);
     priv->panel_client = NULL;
   }
+#endif
 
   if (priv->gconf_client)
   {
@@ -125,12 +139,6 @@ penge_grid_view_dispose (GObject *object)
   }
 
   G_OBJECT_CLASS (penge_grid_view_parent_class)->dispose (object);
-}
-
-static void
-penge_grid_view_finalize (GObject *object)
-{
-  G_OBJECT_CLASS (penge_grid_view_parent_class)->finalize (object);
 }
 
 static void
@@ -203,14 +211,17 @@ penge_grid_view_class_init (PengeGridViewClass *klass)
 {
   GObjectClass *object_class = G_OBJECT_CLASS (klass);
   ClutterActorClass *actor_class = CLUTTER_ACTOR_CLASS (klass);
+#if WITH_MEEGO
   GParamSpec *pspec;
+#endif
 
   g_type_class_add_private (klass, sizeof (PengeGridViewPrivate));
 
+#if WITH_MEEGO
   object_class->get_property = penge_grid_view_get_property;
   object_class->set_property = penge_grid_view_set_property;
+#endif
   object_class->dispose = penge_grid_view_dispose;
-  object_class->finalize = penge_grid_view_finalize;
 
   actor_class->paint = penge_grid_view_paint;
   actor_class->allocate = penge_grid_view_allocate;
@@ -228,12 +239,14 @@ penge_grid_view_class_init (PengeGridViewClass *klass)
                   G_TYPE_NONE,
                   0);
 
+#if WITH_MEEGO
   pspec = g_param_spec_object ("panel-client",
                                "Panel client",
                                "The panel client",
                                MPL_TYPE_PANEL_CLIENT,
                                G_PARAM_READWRITE);
   g_object_class_install_property (object_class, PROP_PANEL_CLIENT, pspec);
+#endif
 }
 
 static void
@@ -244,6 +257,7 @@ _update_layout (PengeGridView *grid_view)
 
   if (priv->vertical_apps)
   {
+#if WITH_MEEGO
     clutter_container_child_set (CLUTTER_CONTAINER (grid_view),
                                  priv->favourite_apps_pane,
                                  "column", col,
@@ -255,6 +269,7 @@ _update_layout (PengeGridView *grid_view)
                                  "x-expand", FALSE,
                                  "x-fill", FALSE,
                                  NULL);
+#endif
 
     if (priv->show_calendar_pane)
     {
@@ -331,9 +346,11 @@ _update_layout (PengeGridView *grid_view)
                                    NULL);
     }
 
+#if WITH_MEEGO
     g_object_set (priv->favourite_apps_pane,
                   "vertical", TRUE,
                   NULL);
+#endif
 
     if (!priv->show_calendar_pane)
       g_object_set (priv->email_pane,
@@ -375,7 +392,7 @@ _update_layout (PengeGridView *grid_view)
       clutter_actor_hide (priv->email_pane);
     }
 
-
+#if 0
     clutter_container_child_set (CLUTTER_CONTAINER (grid_view),
                                  priv->favourite_apps_pane,
                                  "column", col,
@@ -393,6 +410,7 @@ _update_layout (PengeGridView *grid_view)
                                  priv->favourite_apps_pane,
                                  "y-expand", !priv->show_email_pane,
                                  NULL);
+#endif
 
     col++;
     clutter_container_child_set (CLUTTER_CONTAINER (grid_view),
@@ -411,9 +429,11 @@ _update_layout (PengeGridView *grid_view)
                                  "y-expand", TRUE,
                                  "y-fill", TRUE,
                                  NULL);
+#if WITH_MEEGO
     g_object_set (priv->favourite_apps_pane,
                   "vertical", FALSE,
                   NULL);
+#endif
     g_object_set (priv->email_pane,
                   "vertical", FALSE,
                   NULL);
@@ -503,6 +523,7 @@ penge_grid_view_init (PengeGridView *self)
                       2,
                       0);
 
+#if WITH_MEEGO
   priv->favourite_apps_pane = g_object_new (PENGE_TYPE_APPS_PANE,
                                             NULL);
 
@@ -510,6 +531,8 @@ penge_grid_view_init (PengeGridView *self)
                       priv->favourite_apps_pane,
                       3,
                       0);
+#endif
+
   priv->div_tex = clutter_texture_new_from_file (V_DIV_LINE, &error);
 
   if (!priv->div_tex)
