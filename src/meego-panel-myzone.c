@@ -25,8 +25,12 @@
 #include <gdk/gdkx.h>
 #include <gtk/gtk.h>
 #include <mx/mx.h>
+
+#if WITH_MEEGO
 #include <meego-panel/mpl-panel-clutter.h>
 #include <meego-panel/mpl-panel-common.h>
+#endif
+
 #include <penge/penge-grid-view.h>
 
 #include <gconf/gconf-client.h>
@@ -37,6 +41,7 @@
 static GTimer *profile_timer = NULL;
 static guint stage_paint_idle = 0;
 
+#if WITH_MEEGO
 static void
 _client_set_size_cb (MplPanelClient *client,
                      guint           width,
@@ -54,6 +59,7 @@ _grid_view_activated_cb (PengeGridView *grid_view,
 {
   mpl_panel_client_hide ((MplPanelClient *)userdata);
 }
+#endif
 
 static gboolean standalone = FALSE;
 
@@ -94,7 +100,9 @@ int
 main (int    argc,
       char **argv)
 {
+#if WITH_MEEGO
   MplPanelClient *client;
+#endif
   ClutterActor *stage;
   ClutterActor *grid_view;
   GOptionContext *context;
@@ -121,7 +129,11 @@ main (int    argc,
   }
   g_option_context_free (context);
 
+#if WITH_MEEGO
   mpl_panel_clutter_init_with_gtk (&argc, &argv);
+#else
+  gtk_clutter_init (&argc, &argv);
+#endif
 #if 0
   nbtk_texture_cache_load_cache (nbtk_texture_cache_get_default (),
                                  NBTK_CACHE);
@@ -129,6 +141,7 @@ main (int    argc,
   mx_style_load_from_file (mx_style_get_default (),
                            THEMEDIR "/panel.css", NULL);
 
+#if WITH_MEEGO
   if (!standalone)
   {
     client = mpl_panel_clutter_new ("myzone",
@@ -157,13 +170,16 @@ main (int    argc,
                       (GCallback)_grid_view_activated_cb,
                       client);
   } else {
+#endif
     Window xwin;
 
     stage = clutter_stage_get_default ();
     clutter_actor_realize (stage);
     xwin = clutter_x11_get_stage_window (CLUTTER_STAGE (stage));
 
+#if WITH_MEEGO
     mpl_panel_clutter_setup_events_with_gtk_for_xid (xwin);
+#endif
 
     grid_view = g_object_new (PENGE_TYPE_GRID_VIEW,
                               NULL);
@@ -172,7 +188,9 @@ main (int    argc,
     clutter_actor_set_size ((ClutterActor *)grid_view, 1016, 536);
     clutter_actor_set_size (stage, 1016, 536);
     clutter_actor_show_all (stage);
+#if WITH_MEEGO
   }
+#endif
 
   g_signal_connect_after (stage,
                           "paint",
