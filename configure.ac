@@ -53,6 +53,7 @@ PKG_CHECK_MODULES(PENGE,
                   libjana-ecal
                   libsocialweb-client
                   gtk+-2.0 >= 2.14
+                  clutter-gtk-0.10
                   mx-1.0 >= 0.9.0
                   gconf-2.0
                   gio-2.0
@@ -79,15 +80,6 @@ AS_IF([test "x$enable_cache" = "xyes"],
 ])
 
 AM_CONDITIONAL([ENABLE_CACHE],   [test "x$enable_cache" = "xyes"])
-
-AC_ARG_ENABLE([meego-desktop-file],
-              [AC_HELP_STRING([--disable-meego-desktop-file],
-                              [Disable installation of meego desktop file])],
-              [enable_mdesktop=$enableval],
-              [enable_mdesktop=yes])
-
-
-AM_CONDITIONAL([ENABLE_MEEGO_DESKTOP_FILE], [test "x$enable_mdesktop" = "xyes"])
 
 AC_ARG_ENABLE([capplet],
               [AC_HELP_STRING([--disable-capplet],

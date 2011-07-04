@@ -5,7 +5,7 @@ SUBDIRS=theme
 desktopfiles_in_files=meego-panel-myzone.desktop.in
 desktopfiles_files=$(desktopfiles_in_files:.desktop.in=.desktop)
 
-if ENABLE_MEEGO_DESKTOP_FILE
+if WITH_MEEGO
 panelfilesdir=$(MEEGO_PANELS_DIR)/
 panelfiles_DATA = $(desktopfiles_files)
 endif
