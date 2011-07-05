@@ -52,8 +52,7 @@ AM_CONDITIONAL([WITH_MEEGO], [test "$with_meego" = "yes"])
 PKG_CHECK_MODULES(PENGE,
                   libjana-ecal
                   libsocialweb-client
-                  gtk+-2.0 >= 2.14
-                  clutter-gtk-0.10
+                  gtk+-2.0 > 2.14
                   mx-1.0 >= 0.9.0
                   gconf-2.0
                   gio-2.0
