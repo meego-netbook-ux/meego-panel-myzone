@@ -392,7 +392,7 @@ _update_layout (PengeGridView *grid_view)
       clutter_actor_hide (priv->email_pane);
     }
 
-#if 0
+#if WITH_MEEGO
     clutter_container_child_set (CLUTTER_CONTAINER (grid_view),
                                  priv->favourite_apps_pane,
                                  "column", col,
