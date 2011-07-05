@@ -368,6 +368,8 @@ _update_layout (PengeGridView *grid_view)
 
     clutter_actor_queue_relayout (CLUTTER_ACTOR (grid_view));
   } else {
+    int rows = 0;
+
     if (priv->show_calendar_pane)
     {
       clutter_actor_show (priv->calendar_pane);
@@ -378,6 +380,7 @@ _update_layout (PengeGridView *grid_view)
                                    "y-expand", FALSE,
                                    "y-fill", FALSE,
                                    NULL);
+      rows++;
     } else {
       clutter_actor_hide (priv->calendar_pane);
     }
@@ -393,6 +396,7 @@ _update_layout (PengeGridView *grid_view)
                                    "y-fill", FALSE,
                                    "y-align", MX_ALIGN_END,
                                    NULL);
+      rows++;
     } else {
       clutter_actor_hide (priv->email_pane);
     }
@@ -415,20 +419,34 @@ _update_layout (PengeGridView *grid_view)
                                  priv->favourite_apps_pane,
                                  "y-expand", !priv->show_email_pane,
                                  NULL);
+    rows++;
+#else
+
+    /* If we have no applications pane then we need to ensure the calendar
+     * pane is correctly positioned
+     */
+
+    clutter_container_child_set (CLUTTER_CONTAINER (grid_view),
+                                 priv->calendar_pane,
+                                 "y-expand", TRUE,
+                                 "y-fill", FALSE,
+                                 "y-align", MX_ALIGN_START,
+                                 NULL);
+
 #endif
 
     col++;
     clutter_container_child_set (CLUTTER_CONTAINER (grid_view),
                                  priv->div_tex,
-                                 "row-span", 3,
+                                 "row-span", rows,
                                  "column", col,
                                  "x-expand", FALSE,
                                  NULL);
     col++;
     clutter_container_child_set (CLUTTER_CONTAINER (grid_view),
                                  priv->everything_pane,
-                                 "row-span", 3,
                                  "column", col,
+                                 "row-span", rows,
                                  "x-expand", TRUE,
                                  "x-fill", TRUE,
                                  "y-expand", TRUE,
