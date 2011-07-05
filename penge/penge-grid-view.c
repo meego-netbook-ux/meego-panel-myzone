@@ -305,15 +305,20 @@ _update_layout (PengeGridView *grid_view)
       clutter_actor_hide (priv->email_pane);
     }
 
+    if (col > 0)
+    {
+      clutter_actor_show (priv->div_tex);
+      clutter_container_child_set (CLUTTER_CONTAINER (grid_view),
+                                   priv->div_tex,
+                                   "row-span", 1,
+                                   "column", col,
+                                   "x-expand", FALSE,
+                                   NULL);
 
-    clutter_container_child_set (CLUTTER_CONTAINER (grid_view),
-                                 priv->div_tex,
-                                 "row-span", 1,
-                                 "column", col,
-                                 "x-expand", FALSE,
-                                 NULL);
-
-    col++;
+      col++;
+    } else {
+      clutter_actor_hide (priv->div_tex);
+    }
 
     clutter_container_child_set (CLUTTER_CONTAINER (grid_view),
                                  priv->everything_pane,
