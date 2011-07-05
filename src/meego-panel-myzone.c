@@ -132,7 +132,7 @@ main (int    argc,
 #if WITH_MEEGO
   mpl_panel_clutter_init_with_gtk (&argc, &argv);
 #else
-  gtk_clutter_init (&argc, &argv);
+  clutter_init (&argc, &argv);
 #endif
 #if 0
   nbtk_texture_cache_load_cache (nbtk_texture_cache_get_default (),
