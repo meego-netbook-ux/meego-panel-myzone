@@ -96,6 +96,19 @@ _stage_paint_cb (ClutterActor *actor,
   }
 }
 
+#if ! WITH_MEEGO
+static void
+on_stage_allocation (GObject *object, GParamSpec *pspec, gpointer user_data)
+{
+  ClutterActor *stage = CLUTTER_ACTOR (object);
+  ClutterActor *actor = CLUTTER_ACTOR (user_data);
+  float w, h;
+
+  clutter_actor_get_size (stage, &w, &h);
+  clutter_actor_set_size (actor, w, h);
+}
+#endif
+
 int
 main (int    argc,
       char **argv)
@@ -185,8 +198,13 @@ main (int    argc,
                               NULL);
     clutter_container_add_actor (CLUTTER_CONTAINER (stage),
                                  (ClutterActor *)grid_view);
+#if WITH_MEEGO
     clutter_actor_set_size ((ClutterActor *)grid_view, 1016, 536);
     clutter_actor_set_size (stage, 1016, 536);
+#else
+    clutter_stage_set_fullscreen (CLUTTER_STAGE (stage), TRUE);
+    g_signal_connect (stage, "notify::allocation", G_CALLBACK (on_stage_allocation), grid_view);
+#endif
     clutter_actor_show_all (stage);
 #if WITH_MEEGO
   }
