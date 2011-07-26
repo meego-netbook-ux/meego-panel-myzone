@@ -110,6 +110,41 @@ on_stage_allocation (GObject *object, GParamSpec *pspec, gpointer user_data)
 }
 #endif
 
+static void
+screen_changed_cb (GtkWidget *widget,
+                   GdkScreen *old_screen,
+                   gpointer   userdata)
+{
+  GdkScreen *screen = gtk_widget_get_screen(widget);
+  GdkVisual *visual = gdk_screen_get_rgba_visual (screen);
+
+  if (!visual)
+    visual = gdk_screen_get_system_visual (screen);
+
+  gtk_widget_set_visual (widget, visual);
+}
+
+
+static gboolean
+window_draw_cb (GtkWidget *widget, cairo_t *cr)
+{
+  g_debug ("drawing on cairo source");
+  if (gdk_screen_get_rgba_visual (gtk_widget_get_screen (widget)) &&
+      gtk_widget_is_composited (widget))
+    cairo_set_source_rgba (cr, 0.0, 0.0, 0.0, 1.0); /* transparent */
+  else
+    cairo_set_source_rgb (cr, 1.0, 1.0, 1.0); /* opaque white */
+
+    /* draw the background */
+    cairo_set_operator (cr, CAIRO_OPERATOR_SOURCE);
+    cairo_paint (cr);
+
+    cairo_set_operator (cr, CAIRO_OPERATOR_OVER);
+    cairo_paint (cr);
+
+    return FALSE;
+}
+
 int
 main (int    argc,
       char **argv)
@@ -117,10 +152,18 @@ main (int    argc,
 #if WITH_MEEGO
   MplPanelClient *client;
 #endif
+
+  GtkWidget *window;
+  GtkWidget *embeded_stage;
+
   ClutterActor *stage;
   ClutterActor *grid_view;
+  const ClutterColor stage_colour = { 0x00, 0x00, 0x00, 0xff};
+
   GOptionContext *context;
+
   GError *error = NULL;
+
   GConfClient *gconf_client;
 
   setlocale (LC_ALL, "");
@@ -128,6 +171,7 @@ main (int    argc,
   bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
   textdomain (GETTEXT_PACKAGE);
 
+  gtk_clutter_init (&argc, &argv);
   g_thread_init (NULL);
   profile_timer = g_timer_new ();
 
@@ -143,6 +187,7 @@ main (int    argc,
   }
   g_option_context_free (context);
 
+/*
 #if WITH_MEEGO
   mpl_panel_clutter_init_with_gtk (&argc, &argv);
 #else
@@ -152,8 +197,40 @@ main (int    argc,
   nbtk_texture_cache_load_cache (nbtk_texture_cache_get_default (),
                                  NBTK_CACHE);
 #endif
+*/
   mx_style_load_from_file (mx_style_get_default (),
                            THEMEDIR "/panel.css", NULL);
+
+
+  window = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+  gtk_window_set_decorated (GTK_WINDOW (window), FALSE);
+  gtk_window_set_resizable (GTK_WINDOW (window), FALSE);
+  gtk_window_maximize (GTK_WINDOW (window));
+  gtk_window_set_keep_above (GTK_WINDOW (window), TRUE);
+  gtk_window_set_role (GTK_WINDOW (window), "toolbox");
+  gtk_window_set_skip_taskbar_hint (GTK_WINDOW (window), TRUE);
+  gtk_window_set_skip_pager_hint (GTK_WINDOW (window), TRUE);
+
+  screen_changed_cb (window, NULL, NULL);
+
+  g_signal_connect (window, "destroy", G_CALLBACK (gtk_main_quit), NULL);
+
+ // g_signal_connect (G_OBJECT (window),
+  //                  "draw", G_CALLBACK (window_draw_cb),
+   //                 NULL);
+
+  g_signal_connect (G_OBJECT (window), "screen-changed",
+                    G_CALLBACK (screen_changed_cb), NULL);
+
+  gtk_widget_set_app_paintable (GTK_WIDGET (window), TRUE);
+
+  embeded_stage = gtk_clutter_embed_new ();
+  stage = gtk_clutter_embed_get_stage (GTK_CLUTTER_EMBED (embeded_stage));
+  clutter_stage_set_color (CLUTTER_STAGE (stage), &stage_colour);
+  clutter_stage_set_use_alpha (CLUTTER_STAGE (stage), TRUE);
+  clutter_actor_set_opacity (stage, 178);
+
+  gtk_container_add (GTK_CONTAINER (window), embeded_stage);
 
 #if WITH_MEEGO
   if (!standalone)
@@ -185,11 +262,9 @@ main (int    argc,
                       client);
   } else {
 #endif
-    Window xwin;
 
-    stage = clutter_stage_get_default ();
-    clutter_actor_realize (stage);
-    xwin = clutter_x11_get_stage_window (CLUTTER_STAGE (stage));
+
+
 
 #if WITH_MEEGO
     mpl_panel_clutter_setup_events_with_gtk_for_xid (xwin);
@@ -203,7 +278,6 @@ main (int    argc,
     clutter_actor_set_size ((ClutterActor *)grid_view, 1016, 536);
     clutter_actor_set_size (stage, 1016, 536);
 #else
-    clutter_stage_set_fullscreen (CLUTTER_STAGE (stage), TRUE);
     g_signal_connect (stage, "notify::allocation", G_CALLBACK (on_stage_allocation), grid_view);
 #endif
     clutter_actor_show_all (stage);
@@ -231,7 +305,11 @@ main (int    argc,
 
   g_message (G_STRLOC ": PROFILE: Main loop started: %f",
              g_timer_elapsed (profile_timer, NULL));
-  clutter_main ();
+
+  gtk_widget_show_all (window);
+
+  gtk_main ();
+
   g_object_unref (gconf_client);
 
   return 0;
