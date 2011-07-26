@@ -53,6 +53,7 @@ PKG_CHECK_MODULES(PENGE,
                   libjana-ecal
                   libsocialweb-client
                   gtk+-3.0
+                  clutter-gtk-1.0 >= 1.0.0
                   mx-1.0 >= 0.9.0
                   gconf-2.0
                   gio-2.0
