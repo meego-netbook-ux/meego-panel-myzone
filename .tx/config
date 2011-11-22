@@ -1,0 +1,7 @@
+[main]
+host = https://meego.transifex.net
+
+[meego-panel-myzone.meego-panel-myzone]
+file_filter = po/<lang>.po
+source_lang = en
+source_file = po/meego-panel-myzone.pot
