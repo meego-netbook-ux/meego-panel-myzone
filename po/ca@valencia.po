@@ -56,7 +56,7 @@ msgstr "Neteja els documents recents"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Avisos de correu electrònic:"
+msgstr "Avisos de correu electrònic:\n"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

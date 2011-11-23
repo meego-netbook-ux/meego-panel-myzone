@@ -1,73 +1,177 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Aranel Surion <aranel@aranelsurion.org>, 2011.
+# oytun sengul <oytuneren@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-11 23:48+0000\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Ceyhun Alyesil <ceyhunalyesil@gmail.com>\n"
-"Language-Team: \n"
+"Project-Id-Version: meego-panel-myzone\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-03 19:03+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"Language-Team: Turkish (http://www.transifex.net/projects/p/meego/team/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
-#: ../penge/penge-events-pane.c:68
+#: ../data/meego-panel-myzone.desktop.in.in.h:1
+msgid "Myzone panel"
+msgstr "Alanım paneli"
+
+#: ../data/myzone.desktop.in.in.h:1
+msgid "Change the Myzone background and content"
+msgstr "Alanımın arka planını ve içeriğini değiştir"
+
+#: ../data/myzone.desktop.in.in.h:2 ../capplet/myzone-cc-panel.c:169
+msgid "Myzone"
+msgstr "Alanım"
+
+#: ../data/capplet.ui.h:1
+msgid "<b>Change what is shown in your Myzone</b>"
+msgstr "<b>Alanınızda ne gösterileceğini değiştir</b>"
+
+#: ../data/capplet.ui.h:2
+msgid "<b>Myzone Wallpaper</b>"
+msgstr "<b>Alanım Duvarkağıdı</b>"
+
+#: ../data/capplet.ui.h:3
+msgid "Calendar and tasks:"
+msgstr "Takvim ve görevler:"
+
+#: ../data/capplet.ui.h:4
+msgid "Change My Web Accounts"
+msgstr "İnternet Hesaplarımı Değiştir"
+
+#: ../data/capplet.ui.h:5
+msgid "Choose your wallpaper"
+msgstr "Duvarkağıdınızı seçin"
+
+#: ../data/capplet.ui.h:6
+msgid "Clear recent documents"
+msgstr "Son dökümanları temizle"
+
+#: ../data/capplet.ui.h:7
+msgid "Email alerts:"
+msgstr "Eposta uyarıları:\n"
+
+#: ../data/capplet.ui.h:8
+msgid "Reset to default"
+msgstr "Varsayılana dön"
+
+#: ../capplet/gconf-bridge.c:1220
+#, c-format
+msgid "GConf error: %s"
+msgstr "GConf hatası: %s"
+
+#: ../capplet/gconf-bridge.c:1225
+msgid "All further errors shown only on terminal."
+msgstr "Diğer tüm hatalar terminalde gösterilecek."
+
+#: ../capplet/myzone-cc-panel.c:47
+msgid "Show as much web service content as possible"
+msgstr "Mümkün olduğunca çok web servis içeriğini göster"
+
+#: ../capplet/myzone-cc-panel.c:49
+msgid "Show mostly web service content"
+msgstr "Çoğunlukla kullanılan web servisi içeriğini göster"
+
+#: ../capplet/myzone-cc-panel.c:51
+msgid "Show half and half"
+msgstr "Yarı yarıya göster"
+
+#: ../capplet/myzone-cc-panel.c:53
+msgid "Show mostly recent files"
+msgstr "Çoğunlukla en yeni dosyaları göster"
+
+#: ../capplet/myzone-cc-panel.c:55
+msgid "Show as many recent files as possible"
+msgstr "Mümkün olduğunca çok yeni dosyaları göster"
+
+#: ../capplet/myzone-cc-panel.c:77
+msgid ""
+"Do you want to clear your recent documents? This will remove the local "
+"content from your myzone"
+msgstr ""
+"En son kullanılan dökümanları temizlemek istiyor musunuz? Bu aynı zamanda "
+"alanındaki yerel içeriği de kaldıracaktır."
+
+#: ../capplet/myzone-cc-panel.c:343
+msgid "Images"
+msgstr ""
+
+#: ../penge/penge-calendar-pane.c:484
+msgid "Appointments"
+msgstr "Randevular"
+
+#: ../penge/penge-calendar-pane.c:496 ../penge/penge-calendar-pane.c:539
+msgid "Open"
+msgstr "Açık"
+
+#: ../penge/penge-calendar-pane.c:527
+msgid "Tasks"
+msgstr "Görevler"
+
+#: ../penge/penge-events-pane.c:71
 msgid "Create an appointment"
 msgstr "Randevu oluşturun"
 
-#: ../penge/penge-events-pane.c:69 ../penge/penge-tasks-pane.c:52
+#: ../penge/penge-events-pane.c:72 ../penge/penge-tasks-pane.c:53
 msgid "Add"
 msgstr "Ekle"
 
-#: ../penge/penge-events-pane.c:342
+#: ../penge/penge-events-pane.c:402
 msgid "No calendar entries this week"
 msgstr "Bu hafta için hiç bir takvim girdisi yok"
 
-#: ../penge/penge-people-placeholder-tile.c:112
-msgid "Things that your friends do online will appear here. Activate your accounts now!"
-msgstr "Arkadaşlarınızın çevrimiçi yaptıkları  burada görüntülenecek. Hesaplarınızı şimdi etkinleştirin!"
-
-#: ../penge/penge-recent-file-tile.c:215
+#: ../penge/penge-recent-file-tile.c:217
 msgid "Web page"
 msgstr "Web sayfası"
 
-#: ../penge/penge-tasks-pane.c:51
+#: ../penge/penge-tasks-pane.c:52
 msgid "Create a new task"
 msgstr "Yeni bir görev oluşturun"
 
-#: ../penge/penge-tasks-pane.c:433
+#: ../penge/penge-tasks-pane.c:430
 msgid "Nothing to do today"
-msgstr "Bugün bir şey yok"
+msgstr "Bugün yapılacak bir şey yok"
 
-#: ../penge/penge-task-tile.c:316
+#: ../penge/penge-task-tile.c:319
 #, c-format
 msgid "Due %x"
 msgstr "%x kadar"
 
-#: ../data/meego-panel-myzone.desktop.in.in.h:1
-#, fuzzy
-msgid "Myzone panel"
-msgstr "Myzone paneli"
+#: ../penge/penge-welcome-tile.c:28
+msgid ""
+"When you’ve set up your web accounts and used some files, they will appear "
+"here on myzone for easy access whenever you want. "
+msgstr ""
+"İnternet hesaplarınızı oluşturduktan ve bazı dosyaları kullandıktan sonra, "
+"ne zaman isterseniz daha kolay erişebilmeniz için alanınızda "
+"görüntülenecekler. "
 
-#: ../penge/penge-calendar-pane.c:474
-msgid "Appointments"
-msgstr "Randevular"
+#: ../penge/penge-welcome-tile.c:34
+msgid "Play intro video"
+msgstr "Giriş videosunu başlat"
 
-#: ../penge/penge-welcome-tile.c:67
-msgid "Welcome to Meego"
-msgstr "Meego e Hoşgeldiniz"
+#: ../penge/penge-welcome-tile.c:87
+msgid "Welcome to MeeGo"
+msgstr "MeeGo'ya Hoşgeldiniz"
 
-#: ../penge/penge-welcome-tile.c:86
-#, fuzzy
-msgid "This is the Myzone, where your recently used files and content from your web feeds will appear."
-msgstr "Burası Myzone; en son kullandığınız dosyaları ve web sayfalarının içerikleri burada görüntülenecek."
+#: ../penge/penge-email-pane.c:192
+msgid "No unread messages"
+msgstr "Okunmamış mesaj yok"
 
-#~ msgid "As Meego is a bit different to other computers, we've put together a couple of bits and pieces to help you find your way around. We hope you enjoy it, The Meego Team."
-#~ msgstr "Meego diğer bilgisayarlara göre biraz farklı, yolunuzu bulmanız içinetrafa çeşitli parçaları yerleştirdik. Umarız beğenirsiniz,Meego Takımı"
+#: ../penge/penge-email-pane.c:194
+msgid "Unread message"
+msgstr "Okunmamış mesaj"
 
-#~ msgid "<b>Welcome to Meego 2.1 for Netbooks</b>"
-#~ msgstr "<b>Netbooklar için Meego 2.1'e Hoşgeldiniz</b>"
+#: ../penge/penge-email-pane.c:196
+msgid "Unread messages"
+msgstr "Okunmamış mesajlar"
+
+

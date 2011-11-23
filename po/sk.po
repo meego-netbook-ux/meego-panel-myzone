@@ -1,19 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Tomáš Virgl <tomas@virgl.net>, 2010.
 # 
+# Translators:
+# Peter Janosik <pjanosik@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: meego-panel-myzone.meego-10\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-07-03 11:20+0000\n"
-"PO-Revision-Date: 2010-04-20 21:52+0200\n"
-"Last-Translator: Tomáš Virgl <tomas@virgl.net>\n"
-"Language-Team: slovak <sk-i18n@lists.linux.sk>\n"
+"Project-Id-Version: meego-panel-myzone\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-09 13:07+0000\n"
+"Last-Translator: pjanosik <pjanosik@gmail.com>\n"
+"Language-Team: Slovak (http://www.transifex.net/projects/p/meego/team/sk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sk\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 
 #: ../data/meego-panel-myzone.desktop.in.in.h:1
 msgid "Myzone panel"
@@ -53,18 +56,18 @@ msgstr "Vyčistiť zoznam naposledy otvorených dokumentov"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "E-mailové upozornenia:"
+msgstr "E-mailové upozornenia:\n"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"
 msgstr "Nastaviť na predvolené"
 
-#: ../capplet/gconf-bridge.c:1232
+#: ../capplet/gconf-bridge.c:1220
 #, c-format
 msgid "GConf error: %s"
 msgstr "Chyba systému GConf: %s"
 
-#: ../capplet/gconf-bridge.c:1237
+#: ../capplet/gconf-bridge.c:1225
 msgid "All further errors shown only on terminal."
 msgstr "Všetky podrobnejšie chyby budú zobrazené iba v termináli."
 
@@ -89,8 +92,16 @@ msgid "Show as many recent files as possible"
 msgstr "Zobraziť čo najviac nedávno otvorených súborov"
 
 #: ../capplet/myzone-cc-panel.c:77
-msgid "Do you want to clear your recent documents? This will remove the local content from your myzone"
-msgstr "Chcete vyčistiť zoznam naposledy otvorených dokumentov? Toto odstráni miestny obsah z Myzone"
+msgid ""
+"Do you want to clear your recent documents? This will remove the local "
+"content from your myzone"
+msgstr ""
+"Chcete vyčistiť zoznam naposledy otvorených dokumentov? Toto odstráni "
+"miestny obsah z Myzone"
+
+#: ../capplet/myzone-cc-panel.c:343
+msgid "Images"
+msgstr "Obrázky"
 
 #: ../penge/penge-calendar-pane.c:484
 msgid "Appointments"
@@ -134,8 +145,12 @@ msgid "Due %x"
 msgstr "Vďaka %x"
 
 #: ../penge/penge-welcome-tile.c:28
-msgid "When you’ve set up your web accounts and used some files they will appear here on myzone for easy access whenever you want. "
-msgstr "Keď si nastavíte vaše webové účty a použijete nejaké súbory - objavia sa tu na Myzone a budete mať k nim prístup kedykoľvek budete chcieť."
+msgid ""
+"When you’ve set up your web accounts and used some files, they will appear "
+"here on myzone for easy access whenever you want. "
+msgstr ""
+"Keď si nastavíte vaše webové účty a použijete nejaké súbory - objavia sa tu "
+"na Myzone a budete mať k nim prístup kedykoľvek budete chcieť."
 
 #: ../penge/penge-welcome-tile.c:34
 msgid "Play intro video"
@@ -157,5 +172,4 @@ msgstr "Neprečítaná správa"
 msgid "Unread messages"
 msgstr "Neprečítané správy"
 
-#~ msgid "This is the Myzone, where your recently used files and content from your web feeds will appear."
-#~ msgstr "Toto je Myzone. Tu sa objavia naposledy otvorené dokumenty a obsah z vašich webových zdrojov."
+

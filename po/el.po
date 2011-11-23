@@ -57,7 +57,7 @@ msgstr "Διαγραφή πρόσφατων εγγράφων"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Ειδοποιήσεις email:"
+msgstr "Ειδοποιήσεις email:\n"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

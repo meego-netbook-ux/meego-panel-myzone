@@ -1,22 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: meego-panel-myzone\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-27 19:10+0000\n"
-"PO-Revision-Date: 2009-12-22 21:52+0100\n"
-"Last-Translator: Gergely Lónyai <aleph@mandriva.org>\n"
-"Language-Team: Hungarian <aleph@mandriva.org>\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-03 19:03+0000\n"
+"Last-Translator: patrick <patrick.mccarty@linux.intel.com>\n"
+"Language-Team: Hungarian (http://www.transifex.net/projects/p/meego/team/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Country: HUNGARY\n"
-"X-Poedit-Language: Hungarian\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../data/meego-panel-myzone.desktop.in.in.h:1
 msgid "Myzone panel"
@@ -56,7 +55,7 @@ msgstr "Nemrégiben használt dokumentumok listájának törlése"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Email figyelmeztetések:"
+msgstr "Email figyelmeztetések:\n"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"
@@ -92,8 +91,16 @@ msgid "Show as many recent files as possible"
 msgstr "A legtöbb nemrégiben használt fájl megjelenítése"
 
 #: ../capplet/myzone-cc-panel.c:77
-msgid "Do you want to clear your recent documents? This will remove the local content from your myzone"
-msgstr "Törölni szeretné a nemrégiben használt fájlok listáját? A Saját zóna helyi tartalma is törlésre kerül"
+msgid ""
+"Do you want to clear your recent documents? This will remove the local "
+"content from your myzone"
+msgstr ""
+"Törölni szeretné a nemrégiben használt fájlok listáját? A Saját zóna helyi "
+"tartalma is törlésre kerül"
+
+#: ../capplet/myzone-cc-panel.c:343
+msgid "Images"
+msgstr ""
 
 #: ../penge/penge-calendar-pane.c:484
 msgid "Appointments"
@@ -137,8 +144,12 @@ msgid "Due %x"
 msgstr "Esedékes %x"
 
 #: ../penge/penge-welcome-tile.c:28
-msgid "When you’ve set up your web accounts and used some files, they will appear here on myzone for easy access whenever you want. "
-msgstr "A beállított webes fiókok és a használt fájlok az egyszerű elérés érdekében megjelenítésre kerülnek a Saját zónában."
+msgid ""
+"When you’ve set up your web accounts and used some files, they will appear "
+"here on myzone for easy access whenever you want. "
+msgstr ""
+"A beállított webes fiókok és a használt fájlok az egyszerű elérés érdekében "
+"megjelenítésre kerülnek a Saját zónában."
 
 #: ../penge/penge-welcome-tile.c:34
 msgid "Play intro video"
@@ -160,11 +171,4 @@ msgstr "Olvasatlan üzenet"
 msgid "Unread messages"
 msgstr "Olvasatlan üzenetek"
 
-#~ msgid "Things that your friends do online will appear here. Activate your accounts now!"
-#~ msgstr "Gondolj arra, hogy a barátaid is szeretnének rólad tudni. Regisztrálj egy hozzáférést most!"
 
-#~ msgid "<b>Welcome to Meego 2.1 for Netbooks</b>"
-#~ msgstr "<b>Üdvözöl a Meego 2.1 Netbook verzió</b>"
-
-#~ msgid "As Meego is a bit different to other computers, we've put together a couple of bits and pieces to help you find your way around. We hope you enjoy it, The Meego Team."
-#~ msgstr "A Meego kicsit különbözik a többi környezettől. Sok-sok apró programot fogsz találni, amik segíteni fognak a célszerű használatban. Jó szórakozást kíván a Meego csapat!"

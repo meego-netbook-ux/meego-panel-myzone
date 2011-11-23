@@ -1,24 +1,22 @@
-# Dutch translation of mutter-meego.
-# Copyright (C) 2009 THE mutter-meego'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the mutter-meego package.
-# Auke Kok <auke-jan.h.kok@intel.com>, 2009.
-# Hylke Bons <hylke.bons@intel.com>, 2009.
-#
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# André Koot <meneer@tken.net>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: mutter-meego meego2\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-27 19:10+0000\n"
-"PO-Revision-Date: 2010-09-09 15:13-0800\n"
-"Last-Translator: Margie Foster <margie@linux.intel.com>\n"
-"Language-Team: Dutch\n"
+"Project-Id-Version: meego-panel-myzone\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-05 20:08+0000\n"
+"Last-Translator: mijnheer <meneer@tken.net>\n"
+"Language-Team: Dutch (http://www.transifex.net/projects/p/meego/team/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Poedit-Language: Dutch\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../data/meego-panel-myzone.desktop.in.in.h:1
 msgid "Myzone panel"
@@ -28,8 +26,7 @@ msgstr "Myzone paneel"
 msgid "Change the Myzone background and content"
 msgstr "Verander de Myzone achtergrond en inhoud"
 
-#: ../data/myzone.desktop.in.in.h:2
-#: ../capplet/myzone-cc-panel.c:169
+#: ../data/myzone.desktop.in.in.h:2 ../capplet/myzone-cc-panel.c:169
 msgid "Myzone"
 msgstr "Myzone"
 
@@ -59,7 +56,7 @@ msgstr "Wis recente documenten"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Email waarschuwingen:"
+msgstr "Email waarschuwingen:\n"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"
@@ -95,15 +92,22 @@ msgid "Show as many recent files as possible"
 msgstr "Zo veel mogelijk recente bestanden weergeven"
 
 #: ../capplet/myzone-cc-panel.c:77
-msgid "Do you want to clear your recent documents? This will remove the local content from your myzone"
-msgstr "Wil je de lijst van recente documenten wissen? Dit verwijdert de lokale inhoud van je myzone"
+msgid ""
+"Do you want to clear your recent documents? This will remove the local "
+"content from your myzone"
+msgstr ""
+"Wil je de lijst van recente documenten wissen? Dit verwijdert de lokale "
+"inhoud van je myzone"
+
+#: ../capplet/myzone-cc-panel.c:343
+msgid "Images"
+msgstr "Afbeeldingen"
 
 #: ../penge/penge-calendar-pane.c:484
 msgid "Appointments"
 msgstr "Afspraken"
 
-#: ../penge/penge-calendar-pane.c:496
-#: ../penge/penge-calendar-pane.c:539
+#: ../penge/penge-calendar-pane.c:496 ../penge/penge-calendar-pane.c:539
 msgid "Open"
 msgstr "Openen"
 
@@ -115,8 +119,7 @@ msgstr "Taken"
 msgid "Create an appointment"
 msgstr "Nieuwe afspraak"
 
-#: ../penge/penge-events-pane.c:72
-#: ../penge/penge-tasks-pane.c:53
+#: ../penge/penge-events-pane.c:72 ../penge/penge-tasks-pane.c:53
 msgid "Add"
 msgstr "Toevoegen"
 
@@ -142,8 +145,12 @@ msgid "Due %x"
 msgstr "Verstrijkt %x"
 
 #: ../penge/penge-welcome-tile.c:28
-msgid "When you’ve set up your web accounts and used some files, they will appear here on myzone for easy access whenever you want. "
-msgstr "Als je webaccounts hebt ingesteld en bestanden hebt gebruikt, zullen die voor toegangsgemak hier in de myzone verschijnen."
+msgid ""
+"When you’ve set up your web accounts and used some files, they will appear "
+"here on myzone for easy access whenever you want. "
+msgstr ""
+"Als je webaccounts hebt ingesteld en bestanden hebt gebruikt, zullen die "
+"voor toegangsgemak hier in de myzone verschijnen."
 
 #: ../penge/penge-welcome-tile.c:34
 msgid "Play intro video"
@@ -165,30 +172,4 @@ msgstr "Ongelezen bericht"
 msgid "Unread messages"
 msgstr "Ongelezen berichten"
 
-#~ msgid ""
-#~ "This is the Myzone, where your recently used files and content from your "
-#~ "web feeds will appear."
-#~ msgstr ""
-#~ "Dit is de Myzone, waar je recente bestanden en inhoud van webfeeds "
-#~ "verschijnen."
 
-#~ msgid ""
-#~ "Things that your friends do online will appear here. Activate your "
-#~ "accounts now!"
-#~ msgstr ""
-#~ "Dingen die je vrienden online doen verschijnen hier. Activeer je accounts!"
-
-#~ msgid "Myzone settings"
-#~ msgstr "Myzone insellingen"
-
-#~ msgid "<b>Welcome to Meego 2.1 for Netbooks</b>"
-#~ msgstr "<b>Welkom bij Meego 2.1 voor Netbooks</b>"
-
-#~ msgid ""
-#~ "As Meego is a bit different to other computers, we've put together a "
-#~ "couple of bits and pieces to help you find your way around. We hope you "
-#~ "enjoy it, The Meego Team."
-#~ msgstr ""
-#~ "Meego is anders dan andere computers. We hebben hier en daar wat "
-#~ "dingetjes toegevoegd om je op weg te helpen. We hopen dat je het "
-#~ "waardeert, Het Meego Team."

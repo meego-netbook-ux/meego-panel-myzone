@@ -1,17 +1,22 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <demarcosj@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: Meego UX\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-08-27 19:10+0000\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Pablo Barbecho <pablo.barbecho@ptiglobal.net>\n"
-"Language-Team: \n"
+"Project-Id-Version: meego-panel-myzone\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-29 20:42+0000\n"
+"Last-Translator: GLS_Translator_ESP1 <demarcosj@gmail.com>\n"
+"Language-Team: Spanish (Castilian) (http://www.transifex.net/projects/p/meego/team/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Spanish\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../data/meego-panel-myzone.desktop.in.in.h:1
 msgid "Myzone panel"
@@ -21,8 +26,7 @@ msgstr "Myzone"
 msgid "Change the Myzone background and content"
 msgstr "Cambia el contenido y el papel tapiz de Myzone"
 
-#: ../data/myzone.desktop.in.in.h:2
-#: ../capplet/myzone-cc-panel.c:169
+#: ../data/myzone.desktop.in.in.h:2 ../capplet/myzone-cc-panel.c:169
 msgid "Myzone"
 msgstr "Myzone"
 
@@ -52,7 +56,7 @@ msgstr "Limpiar documentos recientes"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Notificaciones de correo electrónico:"
+msgstr "Notificaciones de correo electrónico:\n"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"
@@ -88,15 +92,22 @@ msgid "Show as many recent files as possible"
 msgstr "Mostrar el máximo contenido de archivos recientes"
 
 #: ../capplet/myzone-cc-panel.c:77
-msgid "Do you want to clear your recent documents? This will remove the local content from your myzone"
-msgstr "¿Quieres limpiar el área de documentos recientes? Esto borrará el contenido local de Myzone"
+msgid ""
+"Do you want to clear your recent documents? This will remove the local "
+"content from your myzone"
+msgstr ""
+"¿Quieres limpiar el área de documentos recientes? Esto borrará el contenido "
+"local de Myzone"
+
+#: ../capplet/myzone-cc-panel.c:343
+msgid "Images"
+msgstr "Imágenes"
 
 #: ../penge/penge-calendar-pane.c:484
 msgid "Appointments"
 msgstr "Citas"
 
-#: ../penge/penge-calendar-pane.c:496
-#: ../penge/penge-calendar-pane.c:539
+#: ../penge/penge-calendar-pane.c:496 ../penge/penge-calendar-pane.c:539
 msgid "Open"
 msgstr "Abrir"
 
@@ -108,8 +119,7 @@ msgstr "Tareas"
 msgid "Create an appointment"
 msgstr "Crear una cita"
 
-#: ../penge/penge-events-pane.c:72
-#: ../penge/penge-tasks-pane.c:53
+#: ../penge/penge-events-pane.c:72 ../penge/penge-tasks-pane.c:53
 msgid "Add"
 msgstr "Agregar"
 
@@ -125,20 +135,22 @@ msgstr "Página web"
 msgid "Create a new task"
 msgstr "Crear una tarea"
 
-# Today, you don't have any pending tasks
 #: ../penge/penge-tasks-pane.c:430
 msgid "Nothing to do today"
 msgstr "No hay tareas para hoy"
 
-# (this task) is for %x
 #: ../penge/penge-task-tile.c:319
 #, c-format
 msgid "Due %x"
 msgstr "Es para %x"
 
 #: ../penge/penge-welcome-tile.c:28
-msgid "When you’ve set up your web accounts and used some files, they will appear here on myzone for easy access whenever you want. "
-msgstr "Cuando hayas configurado tus cuentas Web y hayas usado algunos archivos, estos aparecerán aquí en Myzone, para poder acceder a ellos fácilmente."
+msgid ""
+"When you’ve set up your web accounts and used some files, they will appear "
+"here on myzone for easy access whenever you want. "
+msgstr ""
+"Cuando hayas configurado tus cuentas Web y hayas usado algunos archivos, "
+"estos aparecerán aquí en Myzone, para poder acceder a ellos fácilmente."
 
 #: ../penge/penge-welcome-tile.c:34
 msgid "Play intro video"
@@ -160,16 +172,4 @@ msgstr "Mensaje sin leer"
 msgid "Unread messages"
 msgstr "Mensajes sin leer"
 
-#~ msgid ""
-#~ "This is the Myzone, where your recently used files and content from your "
-#~ "web feeds will appear."
-#~ msgstr ""
-#~ "Esto es Myzone, donde verás los archivos usados recientemente y las "
-#~ "noticias de tus sitios web."
-#~ msgid ""
-#~ "Things that your friends do online will appear here. Activate your "
-#~ "accounts now!"
-#~ msgstr "Aquí verás lo que hacen tus amigos en línea. ¡Activa tus cuentas!"
-#~ msgid "<b>Welcome to Meego 2.1 for Netbooks</b>"
-#~ msgstr "<b>Bienvenido a Meego 2.1 para miniportátiles</b>"
 

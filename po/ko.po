@@ -1,20 +1,22 @@
-#
-# Park Shinjo <peremen@gmail.com>, 2010.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <kushylee@yahoo.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-19 16:53+0000\n"
-"PO-Revision-Date: 2010-10-20 08:15-0800\n"
-"Last-Translator: Sun Kim <sunx.kim@intel.com>\n"
-"Language-Team: Korean <peremen@gmail.com>\n"
+"Project-Id-Version: meego-panel-myzone\n"
+"Report-Msgid-Bugs-To: https://bugs.meego.com/\n"
+"POT-Creation-Date: 2011-11-04 12:46+0000\n"
+"PO-Revision-Date: 2011-11-29 19:41+0000\n"
+"Last-Translator: GLS_Translator_KOR1 <kushylee@yahoo.com>\n"
+"Language-Team: Korean (http://www.transifex.net/projects/p/meego/team/ko/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n!=1;\n"
-"X-Poedit-Language: Korean\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Lokalize 1.0\n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: ../data/meego-panel-myzone.desktop.in.in.h:1
 msgid "Myzone panel"
@@ -24,8 +26,7 @@ msgstr "Myzone 패널"
 msgid "Change the Myzone background and content"
 msgstr "Myzone 배경과 내용 변경하기"
 
-#: ../data/myzone.desktop.in.in.h:2
-#: ../capplet/myzone-cc-panel.c:169
+#: ../data/myzone.desktop.in.in.h:2 ../capplet/myzone-cc-panel.c:169
 msgid "Myzone"
 msgstr "Myzone"
 
@@ -55,7 +56,7 @@ msgstr "최근 문서 지우기"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "전자 우편 알림:"
+msgstr "전자 우편 알림:\n"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"
@@ -91,15 +92,20 @@ msgid "Show as many recent files as possible"
 msgstr "가능한 한 많은 최근 파일 보이기"
 
 #: ../capplet/myzone-cc-panel.c:77
-msgid "Do you want to clear your recent documents? This will remove the local content from your myzone"
+msgid ""
+"Do you want to clear your recent documents? This will remove the local "
+"content from your myzone"
 msgstr "최근 문서를 비우시겠습니까? Myzone에 있는 로컬 내용을 삭제합니다"
+
+#: ../capplet/myzone-cc-panel.c:343
+msgid "Images"
+msgstr "이미지"
 
 #: ../penge/penge-calendar-pane.c:484
 msgid "Appointments"
 msgstr "약속"
 
-#: ../penge/penge-calendar-pane.c:496
-#: ../penge/penge-calendar-pane.c:539
+#: ../penge/penge-calendar-pane.c:496 ../penge/penge-calendar-pane.c:539
 msgid "Open"
 msgstr "열기"
 
@@ -111,8 +117,7 @@ msgstr "작업"
 msgid "Create an appointment"
 msgstr "일정 만들기"
 
-#: ../penge/penge-events-pane.c:72
-#: ../penge/penge-tasks-pane.c:53
+#: ../penge/penge-events-pane.c:72 ../penge/penge-tasks-pane.c:53
 msgid "Add"
 msgstr "추가"
 
@@ -138,7 +143,9 @@ msgid "Due %x"
 msgstr "%x까지"
 
 #: ../penge/penge-welcome-tile.c:28
-msgid "When you’ve set up your web accounts and used some files, they will appear here on myzone for easy access whenever you want. "
+msgid ""
+"When you’ve set up your web accounts and used some files, they will appear "
+"here on myzone for easy access whenever you want. "
 msgstr "웹 계정과 사용하는 일부 파일을 설정하면, 언제든지 쉽게 액세스할 수 있도록 Myzone에 나타납니다."
 
 #: ../penge/penge-welcome-tile.c:34
@@ -161,27 +168,4 @@ msgstr "읽지 않은 메시지"
 msgid "Unread messages"
 msgstr "읽지 않은 메시지"
 
-#~ msgid ""
-#~ "This is the Myzone, where your recently used files and content from your "
-#~ "web feeds will appear."
-#~ msgstr "Myzone에서 최근 사용된 파일과 웹 피드의 콘텐츠가 표시됩니다."
 
-#~ msgid ""
-#~ "Things that your friends do online will appear here. Activate your "
-#~ "accounts now!"
-#~ msgstr ""
-#~ "친구들과의 웹 사이트 활동이 여기에 나타날 것입니다. 지금 계정을 여십시오!"
-
-#~ msgid "Myzone settings"
-#~ msgstr "Myzone 설정"
-
-#~ msgid "<b>Welcome to Meego 2.1 for Netbooks</b>"
-#~ msgstr "<b>Meego 2.0 넷북에 오신것을 환영합니다.</b>   "
-
-#~ msgid ""
-#~ "As Meego is a bit different to other computers, we've put together a "
-#~ "couple of bits and pieces to help you find your way around. We hope you "
-#~ "enjoy it, The Meego Team."
-#~ msgstr ""
-#~ "Meego은 다른 컴퓨터와 차이가 있으며, 당신이 이에 잘 적응할 수 있도록 여러"
-#~ "가지로 노력했습니다. 좋은 경험이 되시길 바랍니다. Meego 팀."
