@@ -56,7 +56,7 @@ msgstr "Ryd seneste dokumenter"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "E-post-påmindelser:\n"
+msgstr "E-post-påmindelser:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

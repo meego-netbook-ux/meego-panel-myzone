@@ -55,7 +55,7 @@ msgstr "Bersihkan dokumen terkini"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Peringatan lewat email:\n"
+msgstr "Peringatan lewat email:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

@@ -56,7 +56,7 @@ msgstr "Godkänn senaste dokumenten"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Email meddelanden\n"
+msgstr "Email meddelanden"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

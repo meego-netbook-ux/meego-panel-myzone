@@ -56,7 +56,7 @@ msgstr "Borrar documentos recientes"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Alertas de correo electrónico:\n"
+msgstr "Alertas de correo electrónico:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

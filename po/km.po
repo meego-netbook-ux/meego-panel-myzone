@@ -56,7 +56,7 @@ msgstr "សម្អាត​ឯកសារ​អត្ថបទ​ថ្មី
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "សារ​ផ្ដល់​ដំណឹង:\n"
+msgstr "សារ​ផ្ដល់​ដំណឹង:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

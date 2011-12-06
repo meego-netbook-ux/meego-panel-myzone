@@ -57,7 +57,7 @@ msgstr "Son dökümanları temizle"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Eposta uyarıları:\n"
+msgstr "Eposta uyarıları:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

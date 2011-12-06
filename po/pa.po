@@ -55,7 +55,7 @@ msgstr "ਤਾਜ਼ਾ ਡੌਕੂਮੈਂਟ ਸਾਫ਼ ਕਰੋ"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "ਈਮੇਲ ਚੇਤਾਵਨੀ:\n"
+msgstr "ਈਮੇਲ ਚੇਤਾਵਨੀ:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

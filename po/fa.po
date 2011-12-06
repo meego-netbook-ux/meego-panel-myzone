@@ -56,7 +56,7 @@ msgstr "حذف اسناد اخیر"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "اعلان های ایمیل:\n"
+msgstr "اعلان های ایمیل:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

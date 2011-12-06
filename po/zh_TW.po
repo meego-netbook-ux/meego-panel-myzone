@@ -56,7 +56,7 @@ msgstr "清除最近的文件"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "電子郵件通知：\n"
+msgstr "電子郵件通知："
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

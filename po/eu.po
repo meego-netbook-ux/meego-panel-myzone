@@ -56,7 +56,7 @@ msgstr "Garbitu orain dela gutxiku dokumentuak"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Email abisua:\n"
+msgstr "Email abisua:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

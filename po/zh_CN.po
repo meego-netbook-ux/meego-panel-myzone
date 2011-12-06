@@ -56,7 +56,7 @@ msgstr "清除最近使用的文档"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "电子邮件警告：\n"
+msgstr "电子邮件警告："
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

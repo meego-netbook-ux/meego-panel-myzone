@@ -58,7 +58,7 @@ msgstr "Xóa tài liệu gần đây"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Thông báo email :\n"
+msgstr "Thông báo email:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

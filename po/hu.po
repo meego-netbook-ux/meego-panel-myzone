@@ -55,7 +55,7 @@ msgstr "Nemrégiben használt dokumentumok listájának törlése"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Email figyelmeztetések:\n"
+msgstr "Email figyelmeztetések:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

@@ -55,7 +55,7 @@ msgstr "Netyî les documint d' enawaire"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Abranles emile :\n"
+msgstr "Abranles emile:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

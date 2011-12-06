@@ -56,7 +56,7 @@ msgstr "Pyyhi viime asiakirjat"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Sähköpostihälytykset:\n"
+msgstr "Sähköpostihälytykset:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

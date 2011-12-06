@@ -56,7 +56,7 @@ msgstr "أمسح المستندات الحديثة"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "اشعار بالبريد الألكتروني\n"
+msgstr "اشعار بالبريد الألكتروني"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

@@ -57,7 +57,7 @@ msgstr "Smazat naposledy otevřené dokumenty"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Upozornění na elektronickou poštu:\n"
+msgstr "Upozornění na elektronickou poštu:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

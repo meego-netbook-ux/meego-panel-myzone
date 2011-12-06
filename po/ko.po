@@ -56,7 +56,7 @@ msgstr "최근 문서 지우기"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "전자 우편 알림:\n"
+msgstr "전자 우편 알림:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

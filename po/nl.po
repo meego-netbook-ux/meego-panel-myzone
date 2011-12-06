@@ -56,7 +56,7 @@ msgstr "Wis recente documenten"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "Email waarschuwingen:\n"
+msgstr "Email waarschuwingen:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"

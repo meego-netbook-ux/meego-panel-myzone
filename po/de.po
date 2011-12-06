@@ -56,7 +56,7 @@ msgstr "Dateien löschen"
 
 #: ../data/capplet.ui.h:7
 msgid "Email alerts:"
-msgstr "E-Mail Benachrichtigungen:\n"
+msgstr "E-Mail Benachrichtigungen:"
 
 #: ../data/capplet.ui.h:8
 msgid "Reset to default"
